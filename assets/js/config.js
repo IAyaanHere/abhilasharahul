@@ -7,25 +7,25 @@
 
 window.INVITATION_CONFIG = {
   site: {
-    title: "Shweta & Abhishek — Wedding Invitation",
+    title: "Abhilasha & Rahul — Wedding Invitation",
     description:
-      "You are warmly invited to celebrate the Wedding of Shweta and Abhishek.",
+      "You are warmly invited to celebrate the Wedding of Abhilasha and Rahul.",
   },
 
   couple: {
-    brideInitial: "S",
-    groomInitial: "A",
+    brideInitial: "A",
+    groomInitial: "R",
     bride: {
-      name: "Shweta",
-      shortName: "Shweta",
+      name: "Abhilasha",
+      shortName: "Abhilasha",
       relation: "Daughter of",
-      parents: "Sri. Krupal & Late Smt. Sunita",
+      parents: "Mr. Anil Dhabarde",
     },
     groom: {
-      name: "Abhishek",
-      shortName: "Abhishek",
+      name: "Rahul",
+      shortName: "Rahul",
       relation: "Son of",
-      parents: "Sri. Manoj & Smt. Trishila",
+      parents: "Mr. Santosh Sahakate",
     },
   },
 
@@ -47,9 +47,9 @@ window.INVITATION_CONFIG = {
 
   wedding: {
     // Use a valid ISO date with the local UTC offset for an accurate countdown.
-    isoDate: "2027-01-18T19:00:00+05:30",
-    date: "January 18, 2027",
-    day: "Monday",
+    isoDate: "2026-11-22T19:00:00+05:30",
+    date: "November 22, 2026",
+    day: "Sunday",
     time: "07:00 PM",
     timezone: "IST",
   },
@@ -64,17 +64,17 @@ window.INVITATION_CONFIG = {
     // Replace gallery URLs with your own hosted files or image URLs.
     gallery: [
       {
-        src: "./media/gallery/01.png",
+        src: "./media/gallery/01.webp",
         alt: "A softly lit wedding detail",
         caption: "",
       },
       {
-        src: "./media/gallery/02.png",
+        src: "./media/gallery/02.webp",
         alt: "A joyful wedding celebration",
         caption: "",
       },
       {
-        src: "./media/gallery/03.png",
+        src: "./media/gallery/03.webp",
         alt: "Elegant wedding florals and table setting",
         caption: "",
       },
@@ -122,8 +122,15 @@ dressCode: {
   preWeddingEvents: [
     {
       name: "Wedding Ceremony",
-      date: "January 18, 2027",
-      time: "7:00 PM",
+      date: "November 22, 2026",
+      time: "07:00 PM",
+      location: "Chandni Celebration Lawn, Nagpur",
+      mapLink: "https://www.google.com/maps/search/Chandni+Celebration+Lawn+Kamptee+Rd+Nagpur+Maharashtra+440029",
+    },
+    {
+      name: "Reception",
+      date: "November 23, 2026",
+      time: "07:00 PM",
       location: "Chandni Celebration Lawn, Nagpur",
       mapLink: "https://www.google.com/maps/search/Chandni+Celebration+Lawn+Kamptee+Rd+Nagpur+Maharashtra+440029",
     },
