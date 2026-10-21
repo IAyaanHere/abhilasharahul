@@ -2766,3 +2766,17 @@ textarea:focus-visible {
     padding: 36px 22px 24px;
   }
 }
+
+
+.timeline time {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  line-height: 1.35 !important;
+}
+
+.timeline time .timeline-hour {
+  font-size: .88em;
+  opacity: .9;
+  letter-spacing: .06em;
+}

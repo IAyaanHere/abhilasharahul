@@ -16,13 +16,13 @@ window.INVITATION_CONFIG = {
     brideInitial: "A",
     groomInitial: "R",
     bride: {
-      name: "Ms. Abhilasha Dhabarde",
+      name: "Abhilasha Dhabarde",
       shortName: "Abhilasha",
       relation: "D/O",
       parents: "Anil Dhabarde",
     },
     groom: {
-      name: "Mr. Rahul Sahakate",
+      name: "Rahul Sahakate",
       shortName: "Rahul",
       relation: "S/O",
       parents: "Santosh Sahakate",
@@ -83,20 +83,23 @@ window.INVITATION_CONFIG = {
 
   program: [
     {
-      time: "21 Nov",
+      date: "21 Nov",
+      time: "",
       title: "Haldi Ceremony",
       note: "Saturday, November 21, 2026",
     },
     {
+      date: "22 Nov",
       time: "12:00 PM",
       title: "Marriage Ceremony (Shubha Vivah)",
       note: "Sunday, November 22, 2026 at 12:00 PM\nGhanghare Lawn, Ramnagar Rd, Rashtrabhasha Prachar Samiti, Sindi Meghe, Wardha",
       mapLink: "https://www.google.com/maps/search/Ghanghare+Lawn+Ramnagar+Rd+Rashtrabhasha+Prachar+Samiti+Sindi+Meghe+Wardha",
     },
     {
-      time: "23 Nov",
+      date: "23 Nov",
+      time: "07:00 PM",
       title: "Wedding Reception",
-      note: "Monday, November 23, 2026\nKalode Lawn, Sant Tukdoji Ward, Hinganghat - 442301",
+      note: "Monday, November 23, 2026 at 07:00 PM\nKalode Lawn, Sant Tukdoji Ward, Hinganghat - 442301",
       mapLink: "https://www.google.com/maps/search/Kalode+Lawn+Sant+Tukdoji+Ward+Hinganghat+442301",
     },
   ],
@@ -139,7 +142,7 @@ dressCode: {
     {
       name: "Wedding Reception",
       date: "November 23, 2026",
-      time: "",
+      time: "07:00 PM",
       location: "Kalode Lawn, Sant Tukdoji Ward, Hinganghat - 442301",
       mapLink: "https://www.google.com/maps/search/Kalode+Lawn+Sant+Tukdoji+Ward+Hinganghat+442301",
     },

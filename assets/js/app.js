@@ -129,7 +129,12 @@ Object.entries(config.theme).forEach(([name, value]) => {
         "timeline-index",
         String(index + 1).padStart(2, "0"),
       );
-      const time = createElement("time", "", item.time);
+      const time = createElement("time");
+      if (item.date && item.time) {
+        time.innerHTML = `<span class="timeline-date">${item.date}</span><span class="timeline-hour">${item.time}</span>`;
+      } else {
+        time.innerHTML = `<span class="timeline-date">${item.date || item.time || ""}</span>`;
+      }
       const details = createElement("div");
 
       const title = createElement("h3", "", item.title);
