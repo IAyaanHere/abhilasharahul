@@ -64,18 +64,13 @@ window.INVITATION_CONFIG = {
     // Replace gallery URLs with your own hosted files or image URLs.
     gallery: [
       {
-        src: "./media/gallery/01.webp",
-        alt: "A softly lit wedding detail",
+        src: "./media/gallery/Romantic Garden Evening Glow.png",
+        alt: "Romantic Garden Evening Glow",
         caption: "",
       },
       {
-        src: "./media/gallery/02.webp",
-        alt: "A joyful wedding celebration",
-        caption: "",
-      },
-      {
-        src: "./media/gallery/03.webp",
-        alt: "Elegant wedding florals and table setting",
+        src: "./media/gallery/Candlelit Fairy Light Romance.png",
+        alt: "Candlelit Fairy Light Romance",
         caption: "",
       },
     ],
