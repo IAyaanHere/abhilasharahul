@@ -16,16 +16,16 @@ window.INVITATION_CONFIG = {
     brideInitial: "A",
     groomInitial: "R",
     bride: {
-      name: "Abhilasha",
+      name: "Ms. Abhilasha Dhabarde",
       shortName: "Abhilasha",
-      relation: "Daughter of",
-      parents: "Mr. Anil Dhabarde",
+      relation: "D/O",
+      parents: "Anil Dhabarde",
     },
     groom: {
-      name: "Rahul",
+      name: "Mr. Rahul Sahakate",
       shortName: "Rahul",
-      relation: "Son of",
-      parents: "Mr. Santosh Sahakate",
+      relation: "S/O",
+      parents: "Santosh Sahakate",
     },
   },
 
@@ -47,10 +47,10 @@ window.INVITATION_CONFIG = {
 
   wedding: {
     // Use a valid ISO date with the local UTC offset for an accurate countdown.
-    isoDate: "2026-11-22T19:00:00+05:30",
+    isoDate: "2026-11-22T12:00:00+05:30",
     date: "November 22, 2026",
     day: "Sunday",
-    time: "07:00 PM",
+    time: "12:00 PM",
     timezone: "IST",
   },
 
@@ -83,7 +83,7 @@ window.INVITATION_CONFIG = {
 
   program: [
     {
-      time: "07:00 PM",
+      time: "12:00 PM",
       title: "Muhurtham",
       note: "The Auspicious Wedding Ceremony",
     },
@@ -93,17 +93,17 @@ window.INVITATION_CONFIG = {
       note: "Family greetings & photographs",
     },
     {
-      time: "Dinner",
-      title: "Dinner",
+      time: "Lunch",
+      title: "Wedding Feast",
       note: "A feast shared with love",
     },
   ],
 
   venue: {
-    name: "Chandni Celebration Lawn",
+    name: "Ghanghare Lawn",
     address:
-      "Kamptee Rd, Nagpur,\nMaharashtra 440029",
-    mapUrl: "https://www.google.com/maps/search/Chandni+Celebration+Lawn+Kamptee+Rd+Nagpur+Maharashtra+440029",
+      "Ramnagar Rd, Rashtrabhasha Prachar Samiti,\nSindi Meghe, Wardha",
+    mapUrl: "https://www.google.com/maps/search/Ghanghare+Lawn+Ramnagar+Rd+Rashtrabhasha+Prachar+Samiti+Sindi+Meghe+Wardha",
   },
 
 dressCode: {
@@ -121,18 +121,25 @@ dressCode: {
 
   preWeddingEvents: [
     {
-      name: "Wedding Ceremony",
-      date: "November 22, 2026",
-      time: "07:00 PM",
-      location: "Chandni Celebration Lawn, Nagpur",
-      mapLink: "https://www.google.com/maps/search/Chandni+Celebration+Lawn+Kamptee+Rd+Nagpur+Maharashtra+440029",
+      name: "Haldi Ceremony",
+      date: "November 21, 2026",
+      time: "",
+      location: "",
+      mapLink: "",
     },
     {
-      name: "Reception",
+      name: "Wedding Ceremony (Marriage)",
+      date: "November 22, 2026",
+      time: "12:00 PM",
+      location: "Ghanghare Lawn, Ramnagar Rd, Rashtrabhasha Prachar Samiti, Sindi Meghe, Wardha",
+      mapLink: "https://www.google.com/maps/search/Ghanghare+Lawn+Ramnagar+Rd+Rashtrabhasha+Prachar+Samiti+Sindi+Meghe+Wardha",
+    },
+    {
+      name: "Wedding Reception",
       date: "November 23, 2026",
-      time: "07:00 PM",
-      location: "Chandni Celebration Lawn, Nagpur",
-      mapLink: "https://www.google.com/maps/search/Chandni+Celebration+Lawn+Kamptee+Rd+Nagpur+Maharashtra+440029",
+      time: "",
+      location: "Kalode Lawn, Sant Tukdoji Ward, Hinganghat - 442301",
+      mapLink: "https://www.google.com/maps/search/Kalode+Lawn+Sant+Tukdoji+Ward+Hinganghat+442301",
     },
   ],
 

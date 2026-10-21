@@ -43,18 +43,20 @@ document.addEventListener("dragstart", (event) => {
   function setName(element, personConfig) {
     const fullName = personConfig.name;
     const shortName = personConfig.shortName || fullName.split(" ")[0];
-    const remainingName = fullName.replace(shortName, "").trim();
-    
-    const shortNameElement = createElement("span", "", shortName);
-    
-    // Some names have the shortName at the end, so we preserve the order.
-    // If the full name starts with the short name:
-    if (fullName.startsWith(shortName)) {
-      element.replaceChildren(shortNameElement, ` ${remainingName}`);
+
+    const shortNameIndex = fullName.indexOf(shortName);
+    if (shortNameIndex !== -1) {
+      const prefix = fullName.slice(0, shortNameIndex).trim();
+      const suffix = fullName.slice(shortNameIndex + shortName.length).trim();
+      
+      const shortNameElement = createElement("span", "", shortName);
+      const nodes = [];
+      if (prefix) nodes.push(document.createTextNode(`${prefix} `));
+      nodes.push(shortNameElement);
+      if (suffix) nodes.push(document.createTextNode(` ${suffix}`));
+      element.replaceChildren(...nodes);
     } else {
-      // If the short name is elsewhere (e.g. "Shaikh Zaid")
-      const prefix = fullName.split(shortName)[0].trim();
-      element.replaceChildren(`${prefix} `, shortNameElement);
+      element.replaceChildren(createElement("span", "", fullName));
     }
   }
 
@@ -149,30 +151,35 @@ function renderPreWeddingEvents() {
     const title = createElement("h3", "", event.name);
 
     const dateTime = createElement("p");
-    dateTime.innerHTML = `
-      <span>${event.date}</span>
-      <span>⬩</span>
-      <span>${event.time}</span>
-    `;
+    if (event.time) {
+      dateTime.innerHTML = `
+        <span>${event.date}</span>
+        <span>⬩</span>
+        <span>${event.time}</span>
+      `;
+    } else {
+      dateTime.innerHTML = `<span>${event.date}</span>`;
+    }
 
-    const location = createElement("small", "", event.location);
+    article.append(title, dateTime);
 
-    const mapLink = createElement(
-      "a",
-      "event-map-link",
-      "View on Google Maps"
-    );
+    if (event.location) {
+      const location = createElement("small", "", event.location);
+      article.append(location);
+    }
 
-    mapLink.href = event.mapLink;
-    mapLink.target = "_blank";
-    mapLink.rel = "noreferrer";
+    if (event.mapLink) {
+      const mapLink = createElement(
+        "a",
+        "event-map-link",
+        "View on Google Maps"
+      );
 
-    article.append(
-      title,
-      dateTime,
-      location,
-      mapLink
-    );
+      mapLink.href = event.mapLink;
+      mapLink.target = "_blank";
+      mapLink.rel = "noreferrer";
+      article.append(mapLink);
+    }
 
     eventList.append(article);
   });
