@@ -83,19 +83,21 @@ window.INVITATION_CONFIG = {
 
   program: [
     {
+      time: "21 Nov",
+      title: "Haldi Ceremony",
+      note: "Saturday, November 21, 2026",
+    },
+    {
       time: "12:00 PM",
-      title: "Muhurtham",
-      note: "The Auspicious Wedding Ceremony",
+      title: "Marriage Ceremony (Shubha Vivah)",
+      note: "Sunday, November 22, 2026 · 12:00 PM\nGhanghare Lawn, Ramnagar Rd, Rashtrabhasha Prachar Samiti, Sindi Meghe, Wardha",
+      mapLink: "https://www.google.com/maps/search/Ghanghare+Lawn+Ramnagar+Rd+Rashtrabhasha+Prachar+Samiti+Sindi+Meghe+Wardha",
     },
     {
-      time: "After the Ceremony",
-      title: "Blessings",
-      note: "Family greetings & photographs",
-    },
-    {
-      time: "Lunch",
-      title: "Wedding Feast",
-      note: "A feast shared with love",
+      time: "23 Nov",
+      title: "Wedding Reception",
+      note: "Monday, November 23, 2026\nKalode Lawn, Sant Tukdoji Ward, Hinganghat - 442301",
+      mapLink: "https://www.google.com/maps/search/Kalode+Lawn+Sant+Tukdoji+Ward+Hinganghat+442301",
     },
   ],
 

@@ -132,10 +132,25 @@ Object.entries(config.theme).forEach(([name, value]) => {
       const time = createElement("time", "", item.time);
       const details = createElement("div");
 
-      details.append(
-        createElement("h3", "", item.title),
-        createElement("p", "", item.note),
-      );
+      const title = createElement("h3", "", item.title);
+      const note = createElement("p");
+      note.style.whiteSpace = "pre-line";
+      note.textContent = item.note || "";
+
+      details.append(title, note);
+
+      if (item.mapLink) {
+        const mapLink = createElement(
+          "a",
+          "event-map-link",
+          "View on Google Maps"
+        );
+        mapLink.href = item.mapLink;
+        mapLink.target = "_blank";
+        mapLink.rel = "noreferrer";
+        mapLink.style.marginTop = "12px";
+        details.append(mapLink);
+      }
 
       article.append(number, time, details);
       timeline.append(article);
