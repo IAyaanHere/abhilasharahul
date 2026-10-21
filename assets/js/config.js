@@ -90,7 +90,7 @@ window.INVITATION_CONFIG = {
     {
       time: "12:00 PM",
       title: "Marriage Ceremony (Shubha Vivah)",
-      note: "Sunday, November 22, 2026 · 12:00 PM\nGhanghare Lawn, Ramnagar Rd, Rashtrabhasha Prachar Samiti, Sindi Meghe, Wardha",
+      note: "Sunday, November 22, 2026 at 12:00 PM\nGhanghare Lawn, Ramnagar Rd, Rashtrabhasha Prachar Samiti, Sindi Meghe, Wardha",
       mapLink: "https://www.google.com/maps/search/Ghanghare+Lawn+Ramnagar+Rd+Rashtrabhasha+Prachar+Samiti+Sindi+Meghe+Wardha",
     },
     {
